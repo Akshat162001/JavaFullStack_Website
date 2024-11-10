@@ -624,8 +624,11 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
+	
 	<script src="js/scripts.js"></script>
- <!-- Typed.js Library -->
+
+
+<!-- Typed.js Library -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <!-- JavaScript for Typed Effect -->
@@ -642,9 +645,6 @@
   });
 </script>
 	
-	<!-- * *                               SB Forms JS                               * *-->
-	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
