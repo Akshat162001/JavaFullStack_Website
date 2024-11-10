@@ -59,25 +59,23 @@
 	</nav>
 	<!-- Masthead-->
 	<header class="masthead bg-primary text-white text-center">
-		<div class="container d-flex align-items-center flex-column">
-			<!-- Masthead Avatar Image-->
-			<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg"
-				alt="..." />
-			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Welcome To Unique Developer</h1>
-			<!-- Icon Divider-->
-			<div class="divider-custom divider-light">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
-				</div>
-				<div class="divider-custom-line"></div>
-			</div>
-			<!-- Masthead Subheading-->
-			<p class="masthead-subheading font-weight-light mb-0">Java
-				Development - Web Development - Python</p>
-		</div>
-	</header>
+  <div class="container d-flex align-items-center flex-column">
+    <!-- Masthead Avatar Image-->
+    <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+    <!-- Masthead Heading-->
+    <h1 class="masthead-heading text-uppercase mb-0">Welcome To Unique Developer</h1>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+    <!-- Masthead Subheading with Auto Typing-->
+    <p id="auto-typing" class="masthead-subheading font-weight-light mb-0"></p>
+  </div>
+</header>
 	<!-- Portfolio Section-->
 	<section class="page-section portfolio" id="portfolio">
 		<div class="container">
@@ -627,7 +625,23 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+ <!-- Typed.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- JavaScript for Typed Effect -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed("#auto-typing", {
+      strings: ["Java Development", "Web Development", "Python"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1000,
+      startDelay: 500,
+      loop: true
+    });
+  });
+</script>
+	
 	<!-- * *                               SB Forms JS                               * *-->
 	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
